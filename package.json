@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-code-tabindex",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Add tabindex=\"0\" to code blocks for keyboard accessibility",
   "keywords": [
     "tabindex",
@@ -13,7 +13,11 @@
     "README.md",
     "package.json"
   ],
-  "repository": "git@github.com:AleksandrHovhannisyan/markdown-it-code-tabindex",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AleksandrHovhannisyan/markdown-it-code-tabindex.git"
+  },
+  "homepage": "https://github.com/AleksandrHovhannisyan/markdown-it-code-tabindex.git",
   "author": {
     "name": "Aleksandr Hovhannisyan",
     "url": "https://www.aleksandrhovhannisyan.com"
