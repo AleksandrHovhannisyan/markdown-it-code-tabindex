@@ -1,12 +1,13 @@
 {
   "name": "markdown-it-code-tabindex",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Add tabindex=\"0\" to code blocks for keyboard accessibility",
   "keywords": [
     "tabindex",
     "markdownit",
     "markdownit-plugin"
   ],
+  "type": "module",
   "main": "src/index.js",
   "files": [
     "src/index.js",
@@ -24,28 +25,24 @@
   },
   "license": "MIT",
   "scripts": {
-    "test": "npx jest",
-    "test:watch": "npx jest --watch"
+    "test": "node --test",
+    "test:watch": "node --test --watch",
+    "prepublish": "pnpm run test"
   },
   "devDependencies": {
-    "eslint": "^8.26.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "husky": "4.3.0",
-    "jest": "^29.2.2",
-    "lint-staged": "12.1.7",
+    "@eslint/js": "^9.25.1",
+    "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
     "markdown-it": "^13.0.1",
     "markdown-it-attrs": "^4.1.4",
     "markdown-it-prism": "^2.3.0",
-    "prettier": "^2.7.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "post-checkout": "yarn"
-    }
+    "prettier": "^3.5.3"
   },
   "lint-staged": {
-    "*.js": "yarn run lint:js:fix"
-  }
+    "*.js": "eslint --cache --fix"
+  },
+  "packageManager": "pnpm@8.15.9+sha256.daa27a0b541bc635323ff96c2ded995467ff9fe6d69ff67021558aa9ad9dcc36"
 }
