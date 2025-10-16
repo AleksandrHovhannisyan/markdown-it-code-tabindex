@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-code-tabindex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add tabindex=\"0\" to code blocks for keyboard accessibility",
   "keywords": [
     "tabindex",
@@ -40,6 +40,9 @@
     "markdown-it-attrs": "^4.1.4",
     "markdown-it-prism": "^2.3.0",
     "prettier": "^3.5.3"
+  },
+  "peerDependencies": {
+    "markdown-it": "*"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
